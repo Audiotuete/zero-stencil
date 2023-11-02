@@ -3,7 +3,7 @@ import { Component, Prop, State, Element, h } from '@stencil/core'
 @Component({
   tag: 'box-zero',
   styleUrl: 'box-zero.css',
-  scoped: true,
+  shadow: true,
 })
 export class Box {
   @Prop() name?: string
@@ -70,7 +70,7 @@ export class Box {
 
   counter = 0
   getParentBoxesCount: any = (el: HTMLElement) => {
-    if (el.tagName === 'BODY') {
+    if (el.parentElement.tagName === 'BODY') {
       return `_${this.counter}`
     } else if (el.tagName === 'BOX-ZERO' && el.hasAttribute('name')) {
       this.counter++

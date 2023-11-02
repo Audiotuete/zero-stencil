@@ -1,18 +1,13 @@
 :host {
-  display: block;
-}
-
-.box {
   display: flex;
   overflow: auto;
-  border: 2px solid transparent;
+  border: 1px solid black;
   box-sizing: border-box;
-  margin: 1rem;
   min-height: 24px;
   position: relative;
 }
 
-.name {
+.box-name {
   position: absolute;
   font-size: 80%;
   font-weight: 600;

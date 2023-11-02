@@ -3,12 +3,42 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+
     <title>Stencil Component Starter</title>
 
     <script type="module" src="/build/zero-stencil.esm.js"></script>
     <script nomodule src="/build/zero-stencil.js"></script>
   </head>
-  <body>
-    <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+  <body style="font-family: Arial, Helvetica, sans-serif; height: 100vh; display: flex; justify-content: center; align-items: center; margin: 0">
+    <box-zero w="400px" h="800px">
+      <box-zero row justify="space-between" flex="1"> <box-zero w="60px"></box-zero> <box-zero w="60px"></box-zero></box-zero>
+      <box-zero block flex="1"><p>Home</p></box-zero>
+      <box-zero name="Social Bar" row justify="space-between" flex="1">
+        <box-zero w="60px"></box-zero>
+        <box-zero w="60px"></box-zero>
+        <box-zero w="60px"></box-zero>
+        <box-zero w="60px"></box-zero>
+        <box-zero w="60px"></box-zero>
+        <box-zero w="60px"></box-zero>
+      </box-zero>
+      <box-zero gap="10px" row flex="1">
+        <box-zero w="60px"></box-zero>
+        <box-zero w="120px"></box-zero>
+      </box-zero>
+      <box-zero block pt="10px" justfiy="center" flex="10">
+        <box-zero name="Stats" row wrap gap="10px" justify="center">
+          <box-zero name="Stat" w="180px" h="180px"></box-zero>
+          <box-zero name="Stat" w="180px" h="180px"></box-zero>
+          <box-zero name="Stat" w="180px" h="180px"></box-zero>
+          <box-zero name="Stat" w="180px" h="180px"></box-zero>
+        </box-zero>
+      </box-zero>
+      <box-zero name="Navbar" row justify="space-around" flex="1">
+        <box-zero w="60px"></box-zero>
+        <box-zero w="60px"></box-zero>
+        <box-zero w="60px"></box-zero>
+        <box-zero w="60px"></box-zero>
+      </box-zero>
+    </box-zero>
   </body>
 </html>

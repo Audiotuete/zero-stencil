@@ -1,4 +1,4 @@
-.box {
+:host {
   display: flex;
   overflow: auto;
   border: 1px solid black;

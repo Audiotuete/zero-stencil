@@ -50,7 +50,7 @@ export class Box {
 
   render() {
     return (
-      <Host class="box" role={assignRole(this.as)} style={styleBoxWithProps(this)}>
+      <Host role={assignRole(this.as)} style={styleBoxWithProps(this)}>
         <slot />
         {this.name && this.boxColor && (
           <span role="none" class="box-label" style={{ color: this.boxColor }}>

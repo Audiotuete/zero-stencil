@@ -1,4 +1,4 @@
-:host {
+.box {
   display: flex;
   overflow: auto;
   border: 1px solid black;
@@ -7,7 +7,7 @@
   position: relative;
 }
 
-.box-name {
+.box-label {
   position: absolute;
   font-size: 80%;
   font-weight: 600;

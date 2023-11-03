@@ -2,8 +2,8 @@ import { Component, Prop, State, Element, Host, h } from '@stencil/core'
 import { assignRole, styleBoxWithProps, enableColoredBoxes } from '../../utils/box'
 
 @Component({
-  tag: 'box-zero',
-  styleUrl: 'box-zero.css',
+  tag: 'z-box',
+  styleUrl: '../../global/box.css',
   shadow: true,
 })
 export class Box {
